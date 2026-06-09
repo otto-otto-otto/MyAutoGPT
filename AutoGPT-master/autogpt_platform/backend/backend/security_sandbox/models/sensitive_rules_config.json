@@ -1,0 +1,56 @@
+{
+  "$schema": "sensitive_rules_config_schema",
+  "_comment": "==============================================================",
+  "_comment2": "SENSITIVE RULES CONFIGURATION — User-extensible keyword lists",
+  "_comment3": "==============================================================",
+  "_comment4": "This file allows you to add domain-specific keyword lists that",
+  "_comment5": "the ML model cannot cover (e.g. proprietary corporate terms,",
+  "_comment6": "industry-specific jargon, emerging slang).",
+  "_comment7": "",
+  "_comment8": "Each category has:",
+  "_comment9": "  - enabled:  whether this category is active",
+  "_comment10": "  - action:   'reject' (block) or 'flag' (warn)",
+  "_comment11": "  - terms:    list of matching substrings (case-insensitive)",
+  "_comment12": "  - patterns: optional regex patterns",
+  "_comment13": "",
+  "_comment14": "REQUIRED: Rename this file to 'sensitive_rules_config.json'",
+  "_comment15": "in the same directory to activate.",
+  "_comment16": "==============================================================",
+
+  "categories": {
+    "gambling_keywords": {
+      "enabled": true,
+      "action": "reject",
+      "description": "Gambling-related terms — add your own word list here",
+      "terms": [],
+      "patterns": []
+    },
+    "inappropriate_ads": {
+      "enabled": true,
+      "action": "flag",
+      "description": "Adult/unwanted advertising patterns — add your own word list here",
+      "terms": [],
+      "patterns": []
+    },
+    "threat_language": {
+      "enabled": true,
+      "action": "reject",
+      "description": "Threatening/violent language patterns — add your own word list here",
+      "terms": [],
+      "patterns": []
+    },
+    "platform_specific": {
+      "enabled": true,
+      "action": "flag",
+      "description": "Your platform-specific forbidden terms go here",
+      "terms": [],
+      "patterns": []
+    }
+  },
+
+  "global_settings": {
+    "min_match_length": 2,
+    "case_sensitive": false,
+    "check_normalized_text": true
+  }
+}

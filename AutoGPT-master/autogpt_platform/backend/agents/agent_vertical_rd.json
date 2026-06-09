@@ -1,0 +1,68 @@
+{
+  "id": "a1b2c3d4-e5f6-4703-a803-b1c2d3e4f5a3",
+  "version": 1,
+  "is_active": true,
+  "name": "研发技术智能体",
+  "description": "专业技术研发研究智能体，提供技术方案设计、架构评审、代码分析、技术选型、性能优化、安全审计、技术趋势分析等研发领域的研究与建议。",
+  "instructions": null,
+  "recommended_schedule_cron": null,
+  "forked_from_id": null,
+  "forked_from_version": null,
+  "user_id": "",
+  "created_at": "2026-06-14T00:00:00.000Z",
+  "nodes": [
+    {
+      "id": "f30001a1-0003-4003-a003-f00000000003",
+      "block_id": "c0a8e994-ebf1-4a9c-a4d8-89d09c86741b",
+      "input_default": { "name": "Input", "secret": false, "advanced": false },
+      "metadata": { "position": { "x": 100, "y": 100 } },
+      "input_links": [],
+      "output_links": [
+        { "id": "f30001l1-0003-4003-b005-f00000000003", "source_id": "f30001a1-0003-4003-a003-f00000000003", "sink_id": "f30001b1-0003-4003-c003-f00000000003", "source_name": "result", "sink_name": "prompt", "is_static": true }
+      ]
+    },
+    {
+      "id": "f30001b1-0003-4003-c003-f00000000003",
+      "block_id": "3b191d9f-356f-482d-8238-ba04b6d18381",
+      "input_default": {
+        "model": "gpt-5-2025-08-07",
+        "retry": 3,
+        "prompt": "",
+        "sys_prompt": "你是一名资深技术架构师和研发顾问，拥有全栈开发经验，精通多种编程语言（Python、Java、Go、Rust、TypeScript等）、主流框架和云原生技术体系。\n\n## 核心能力\n- 技术架构设计与评审（微服务、分布式系统、事件驱动架构）\n- 技术选型评估与对比分析\n- 代码质量分析（可读性、性能、安全性、可维护性）\n- 性能瓶颈诊断与优化方案\n- 系统安全审计与漏洞分析\n- API 设计与数据库建模\n- DevOps 与 CI/CD 流程设计\n- 技术趋势研究与技术雷达分析\n- 开源项目评估与选型建议\n\n## 研究方法\n1. 充分理解技术上下文：业务需求、团队能力、现有技术栈、约束条件\n2. 基于工程实践给出方案，而非空谈理论\n3. 对于技术选型，列出候选方案的优缺点和适用场景\n4. 代码分析时关注逻辑正确性、边界条件、错误处理\n5. 性能优化时先定位瓶颈，再给出可量化的优化建议\n6. 保持对新技术的好奇心，但推荐时以稳定性和社区支持为重要考量\n\n## 输出规范\n- 架构方案使用结构化描述，包含组件图说明\n- 代码审查意见使用统一格式：位置 + 问题等级 + 问题描述 + 改进建议\n- 技术对比使用表格呈现关键维度\n- 性能优化建议附带预期提升幅度\n- 所有建议需有依据和参考文献或链接",
+        "ollama_host": "localhost:11434",
+        "prompt_values": {},
+        "multiple_tool_calls": false,
+        "conversation_history": []
+      },
+      "metadata": { "position": { "x": 400, "y": 100 } },
+      "input_links": [
+        { "id": "f30001l1-0003-4003-b005-f00000000003", "source_id": "f30001a1-0003-4003-a003-f00000000003", "sink_id": "f30001b1-0003-4003-c003-f00000000003", "source_name": "result", "sink_name": "prompt", "is_static": true }
+      ],
+      "output_links": [
+        { "id": "f30001l2-0003-4003-b006-f00000000003", "source_id": "f30001b1-0003-4003-c003-f00000000003", "sink_id": "f30001c1-0003-4003-d003-f00000000003", "source_name": "finished", "sink_name": "value", "is_static": false }
+      ]
+    },
+    {
+      "id": "f30001c1-0003-4003-d003-f00000000003",
+      "block_id": "363ae599-353e-4804-937e-b2ee3cef3da4",
+      "input_default": { "name": "Output", "secret": false, "advanced": false, "escape_html": false },
+      "metadata": { "position": { "x": 700, "y": 100 } },
+      "input_links": [
+        { "id": "f30001l2-0003-4003-b006-f00000000003", "source_id": "f30001b1-0003-4003-c003-f00000000003", "sink_id": "f30001c1-0003-4003-d003-f00000000003", "source_name": "finished", "sink_name": "value", "is_static": false }
+      ],
+      "output_links": []
+    }
+  ],
+  "links": [
+    { "id": "f30001l1-0003-4003-b005-f00000000003", "source_id": "f30001a1-0003-4003-a003-f00000000003", "sink_id": "f30001b1-0003-4003-c003-f00000000003", "source_name": "result", "sink_name": "prompt", "is_static": true },
+    { "id": "f30001l2-0003-4003-b006-f00000000003", "source_id": "f30001b1-0003-4003-c003-f00000000003", "sink_id": "f30001c1-0003-4003-d003-f00000000003", "source_name": "finished", "sink_name": "value", "is_static": false }
+  ],
+  "sub_graphs": [],
+  "input_schema": { "type": "object", "properties": { "Input": { "advanced": false, "secret": false, "title": "Input" } }, "required": ["Input"] },
+  "output_schema": { "type": "object", "properties": { "Output": { "advanced": false, "secret": false, "title": "Output" } }, "required": ["Output"] },
+  "has_external_trigger": false,
+  "has_human_in_the_loop": false,
+  "has_sensitive_action": false,
+  "trigger_setup_info": null,
+  "credentials_input_schema": { "type": "object", "properties": {}, "required": [] }
+}

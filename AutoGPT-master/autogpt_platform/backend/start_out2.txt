@@ -1,0 +1,5 @@
+2026-06-02 11:45:55,119 [34mINFO[0m  Metrics endpoint exposed at /metrics for external-api
+2026-06-02 11:45:55,138 [34mINFO[0m  Metrics endpoint exposed at /metrics for rest-api
+2026-06-02 11:45:55,316 [34mINFO[0m  [AgentServer] Starting...
+2026-06-02 11:45:55,336 [34mINFO[0m  Started server process [27508]
+2026-06-02 11:45:55,340 [34mINFO[0m  Waiting for application startup.

@@ -1,0 +1,68 @@
+{
+  "id": "a1b2c3d4-e5f6-4710-a810-b1c2d3e4f5a0",
+  "version": 1,
+  "is_active": true,
+  "name": "艺术与设计智能体",
+  "description": "专业艺术与设计研究智能体，提供视觉设计指导、艺术史研究、设计趋势分析、UI/UX评审、品牌设计策略、创意方法论、艺术市场分析等艺术设计领域的研究与建议。",
+  "instructions": null,
+  "recommended_schedule_cron": null,
+  "forked_from_id": null,
+  "forked_from_version": null,
+  "user_id": "",
+  "created_at": "2026-06-14T00:00:00.000Z",
+  "nodes": [
+    {
+      "id": "fa0001a1-0010-4010-a010-f00000000010",
+      "block_id": "c0a8e994-ebf1-4a9c-a4d8-89d09c86741b",
+      "input_default": { "name": "Input", "secret": false, "advanced": false },
+      "metadata": { "position": { "x": 100, "y": 100 } },
+      "input_links": [],
+      "output_links": [
+        { "id": "fa0001l1-0010-4010-b019-f00000000010", "source_id": "fa0001a1-0010-4010-a010-f00000000010", "sink_id": "fa0001b1-0010-4010-c010-f00000000010", "source_name": "result", "sink_name": "prompt", "is_static": true }
+      ]
+    },
+    {
+      "id": "fa0001b1-0010-4010-c010-f00000000010",
+      "block_id": "3b191d9f-356f-482d-8238-ba04b6d18381",
+      "input_default": {
+        "model": "gpt-5-2025-08-07",
+        "retry": 3,
+        "prompt": "",
+        "sys_prompt": "你是一名资深艺术与设计顾问，拥有视觉传达、工业设计和艺术史背景，精通设计方法论、色彩理论、用户体验设计和艺术鉴赏。\n\n## 核心能力\n- 视觉设计指导（版式设计、色彩搭配、字体选择）\n- UI/UX 设计评审与启发式评估\n- 品牌设计策略与视觉识别系统（VIS）\n- 艺术史分析与流派风格识别\n- 设计趋势研究与预测\n- 创意方法与设计思维（Design Thinking）\n- 工业设计与产品美学分析\n- 室内与空间设计分析\n- 艺术市场与收藏投资分析\n- 设计系统与组件库设计\n\n## 研究方法\n1. 从形式（form）、功能（function）和情感（feeling）三个维度分析设计\n2. 关注设计背后的人文、社会和技术驱动因素\n3. 参考经典设计案例和当代优秀实践\n4. 考虑不同文化和审美偏好的影响\n5. 平衡创新性与可用性\n6. 提供具体的、可执行的建议而非空洞的抽象评论\n\n## 输出规范\n- 视觉分析使用描述性语言，包含色彩、形状、空间、质感等要素\n- 设计建议分层级：战略层 → 结构层 → 表现层\n- UI/UX 评审使用Nielsen十大可用性原则作为参照\n- 色彩建议使用具体色值（HEX或HSL）\n- 字体建议包含推荐的字体族和备选方案\n- 引用设计理论和流派时注明提出者和时代背景",
+        "ollama_host": "localhost:11434",
+        "prompt_values": {},
+        "multiple_tool_calls": false,
+        "conversation_history": []
+      },
+      "metadata": { "position": { "x": 400, "y": 100 } },
+      "input_links": [
+        { "id": "fa0001l1-0010-4010-b019-f00000000010", "source_id": "fa0001a1-0010-4010-a010-f00000000010", "sink_id": "fa0001b1-0010-4010-c010-f00000000010", "source_name": "result", "sink_name": "prompt", "is_static": true }
+      ],
+      "output_links": [
+        { "id": "fa0001l2-0010-4010-b020-f00000000010", "source_id": "fa0001b1-0010-4010-c010-f00000000010", "sink_id": "fa0001c1-0010-4010-d010-f00000000010", "source_name": "finished", "sink_name": "value", "is_static": false }
+      ]
+    },
+    {
+      "id": "fa0001c1-0010-4010-d010-f00000000010",
+      "block_id": "363ae599-353e-4804-937e-b2ee3cef3da4",
+      "input_default": { "name": "Output", "secret": false, "advanced": false, "escape_html": false },
+      "metadata": { "position": { "x": 700, "y": 100 } },
+      "input_links": [
+        { "id": "fa0001l2-0010-4010-b020-f00000000010", "source_id": "fa0001b1-0010-4010-c010-f00000000010", "sink_id": "fa0001c1-0010-4010-d010-f00000000010", "source_name": "finished", "sink_name": "value", "is_static": false }
+      ],
+      "output_links": []
+    }
+  ],
+  "links": [
+    { "id": "fa0001l1-0010-4010-b019-f00000000010", "source_id": "fa0001a1-0010-4010-a010-f00000000010", "sink_id": "fa0001b1-0010-4010-c010-f00000000010", "source_name": "result", "sink_name": "prompt", "is_static": true },
+    { "id": "fa0001l2-0010-4010-b020-f00000000010", "source_id": "fa0001b1-0010-4010-c010-f00000000010", "sink_id": "fa0001c1-0010-4010-d010-f00000000010", "source_name": "finished", "sink_name": "value", "is_static": false }
+  ],
+  "sub_graphs": [],
+  "input_schema": { "type": "object", "properties": { "Input": { "advanced": false, "secret": false, "title": "Input" } }, "required": ["Input"] },
+  "output_schema": { "type": "object", "properties": { "Output": { "advanced": false, "secret": false, "title": "Output" } }, "required": ["Output"] },
+  "has_external_trigger": false,
+  "has_human_in_the_loop": false,
+  "has_sensitive_action": false,
+  "trigger_setup_info": null,
+  "credentials_input_schema": { "type": "object", "properties": {}, "required": [] }
+}

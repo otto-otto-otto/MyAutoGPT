@@ -1,0 +1,141 @@
+{
+  "id": "a1b2c3d4-e5f6-4701-a801-b1c2d3e4f5a1",
+  "version": 1,
+  "is_active": true,
+  "name": "财务分析智能体",
+  "description": "专业财务分析研究智能体，提供财务数据分析、报表解读、投资评估、成本优化、税务规划、预算编制等财务领域的研究与建议。",
+  "instructions": null,
+  "recommended_schedule_cron": null,
+  "forked_from_id": null,
+  "forked_from_version": null,
+  "user_id": "",
+  "created_at": "2026-06-14T00:00:00.000Z",
+  "nodes": [
+    {
+      "id": "f10001a1-0001-4001-a001-f00000000001",
+      "block_id": "c0a8e994-ebf1-4a9c-a4d8-89d09c86741b",
+      "input_default": {
+        "name": "Input",
+        "secret": false,
+        "advanced": false
+      },
+      "metadata": {
+        "position": { "x": 100, "y": 100 }
+      },
+      "input_links": [],
+      "output_links": [
+        {
+          "id": "f10001l1-0001-4001-b001-f00000000001",
+          "source_id": "f10001a1-0001-4001-a001-f00000000001",
+          "sink_id": "f10001b1-0001-4001-c001-f00000000001",
+          "source_name": "result",
+          "sink_name": "prompt",
+          "is_static": true
+        }
+      ]
+    },
+    {
+      "id": "f10001b1-0001-4001-c001-f00000000001",
+      "block_id": "3b191d9f-356f-482d-8238-ba04b6d18381",
+      "input_default": {
+        "model": "gpt-5-2025-08-07",
+        "retry": 3,
+        "prompt": "",
+        "sys_prompt": "你是一名经验丰富的首席财务分析师（CFA），拥有超过15年的财务分析、企业估值和投资研究经验。\n\n## 核心能力\n- 财务报告分析（资产负债表、利润表、现金流量表）\n- 财务比率计算与解读（偿债能力、盈利能力、营运能力、成长能力）\n- 企业估值建模（DCF、可比公司分析、先例交易分析）\n- 预算编制与成本控制策略\n- 税务筹划与合规分析\n- 投资项目可行性研究与风险评估\n- 行业财务对比分析\n\n## 研究方法\n1. 始终要求提供具体的财务数据或上下文信息\n2. 进行定量分析时，明确计算步骤和假设条件\n3. 对比行业基准和历史趋势，提供有参照意义的分析\n4. 识别财务风险并给出风险缓解建议\n5. 使用标准财务术语，确保专业性和准确性\n\n## 输出规范\n- 分析报告应当结构清晰，包含摘要、详细分析、结论和建议\n- 关键财务指标使用表格呈现\n- 重要发现和建议使用编号列表\n- 所有数据来源和假设条件应明确标注\n- 涉及金额时注明币种和计量单位",
+        "ollama_host": "localhost:11434",
+        "prompt_values": {},
+        "multiple_tool_calls": false,
+        "conversation_history": []
+      },
+      "metadata": {
+        "position": { "x": 400, "y": 100 }
+      },
+      "input_links": [
+        {
+          "id": "f10001l1-0001-4001-b001-f00000000001",
+          "source_id": "f10001a1-0001-4001-a001-f00000000001",
+          "sink_id": "f10001b1-0001-4001-c001-f00000000001",
+          "source_name": "result",
+          "sink_name": "prompt",
+          "is_static": true
+        }
+      ],
+      "output_links": [
+        {
+          "id": "f10001l2-0001-4001-b002-f00000000001",
+          "source_id": "f10001b1-0001-4001-c001-f00000000001",
+          "sink_id": "f10001c1-0001-4001-d001-f00000000001",
+          "source_name": "finished",
+          "sink_name": "value",
+          "is_static": false
+        }
+      ]
+    },
+    {
+      "id": "f10001c1-0001-4001-d001-f00000000001",
+      "block_id": "363ae599-353e-4804-937e-b2ee3cef3da4",
+      "input_default": {
+        "name": "Output",
+        "secret": false,
+        "advanced": false,
+        "escape_html": false
+      },
+      "metadata": {
+        "position": { "x": 700, "y": 100 }
+      },
+      "input_links": [
+        {
+          "id": "f10001l2-0001-4001-b002-f00000000001",
+          "source_id": "f10001b1-0001-4001-c001-f00000000001",
+          "sink_id": "f10001c1-0001-4001-d001-f00000000001",
+          "source_name": "finished",
+          "sink_name": "value",
+          "is_static": false
+        }
+      ],
+      "output_links": []
+    }
+  ],
+  "links": [
+    {
+      "id": "f10001l1-0001-4001-b001-f00000000001",
+      "source_id": "f10001a1-0001-4001-a001-f00000000001",
+      "sink_id": "f10001b1-0001-4001-c001-f00000000001",
+      "source_name": "result",
+      "sink_name": "prompt",
+      "is_static": true
+    },
+    {
+      "id": "f10001l2-0001-4001-b002-f00000000001",
+      "source_id": "f10001b1-0001-4001-c001-f00000000001",
+      "sink_id": "f10001c1-0001-4001-d001-f00000000001",
+      "source_name": "finished",
+      "sink_name": "value",
+      "is_static": false
+    }
+  ],
+  "sub_graphs": [],
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "Input": { "advanced": false, "secret": false, "title": "Input" }
+    },
+    "required": ["Input"]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "Output": { "advanced": false, "secret": false, "title": "Output" }
+    },
+    "required": ["Output"]
+  },
+  "has_external_trigger": false,
+  "has_human_in_the_loop": false,
+  "has_sensitive_action": false,
+  "trigger_setup_info": null,
+  "credentials_input_schema": {
+    "type": "object",
+    "properties": {},
+    "required": []
+  }
+}

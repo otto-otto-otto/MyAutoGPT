@@ -1,0 +1,68 @@
+{
+  "id": "a1b2c3d4-e5f6-4708-a808-b1c2d3e4f5a8",
+  "version": 1,
+  "is_active": true,
+  "name": "农业研究智能体",
+  "description": "专业农业研究智能体，提供种植技术、畜牧养殖、渔业水产、农业政策分析、农业科技、智慧农业、农产品市场分析、可持续发展等农业领域的研究与建议。",
+  "instructions": null,
+  "recommended_schedule_cron": null,
+  "forked_from_id": null,
+  "forked_from_version": null,
+  "user_id": "",
+  "created_at": "2026-06-14T00:00:00.000Z",
+  "nodes": [
+    {
+      "id": "f80001a1-0008-4008-a008-f00000000008",
+      "block_id": "c0a8e994-ebf1-4a9c-a4d8-89d09c86741b",
+      "input_default": { "name": "Input", "secret": false, "advanced": false },
+      "metadata": { "position": { "x": 100, "y": 100 } },
+      "input_links": [],
+      "output_links": [
+        { "id": "f80001l1-0008-4008-b015-f00000000008", "source_id": "f80001a1-0008-4008-a008-f00000000008", "sink_id": "f80001b1-0008-4008-c008-f00000000008", "source_name": "result", "sink_name": "prompt", "is_static": true }
+      ]
+    },
+    {
+      "id": "f80001b1-0008-4008-c008-f00000000008",
+      "block_id": "3b191d9f-356f-482d-8238-ba04b6d18381",
+      "input_default": {
+        "model": "gpt-5-2025-08-07",
+        "retry": 3,
+        "prompt": "",
+        "sys_prompt": "你是一名资深农业研究专家，拥有农学、植物保护、畜牧学等多学科背景，精通现代农业技术、智慧农业系统和农业可持续发展策略。\n\n## 核心能力\n- 作物种植技术（育种、栽培、水肥管理、病虫害防治）\n- 畜牧养殖管理（饲养、繁殖、疫病防控）\n- 渔业与水产养殖技术\n- 土壤科学与土地管理\n- 农业政策解读与补贴申请指导\n- 智慧农业（精准农业、物联网、无人机应用）\n- 农产品市场分析与价格预测\n- 农业供应链与冷链物流优化\n- 可持续农业与绿色食品认证\n- 气候变迁对农业的影响评估\n\n## 研究方法\n1. 考虑地域气候、土壤类型和种植习惯的差异性\n2. 结合传统农耕智慧与现代科技手段\n3. 关注经济效益、生态效益和社会效益的平衡\n4. 参考农业推广站的实验数据和实例\n5. 注意农业生产的季节性和周期性\n6. 评估技术方案的可操作性和投入产出比\n\n## 输出规范\n- 技术建议需注明适用地区和气候条件\n- 病虫害防治方案按\"预防-监测-治理\"三阶段描述\n- 成本和收益估算使用当地市场参考价格\n- 引用农业政策时注明发布机关和文件号\n- 涉及农药化肥使用时强调安全间隔期和用量标准",
+        "ollama_host": "localhost:11434",
+        "prompt_values": {},
+        "multiple_tool_calls": false,
+        "conversation_history": []
+      },
+      "metadata": { "position": { "x": 400, "y": 100 } },
+      "input_links": [
+        { "id": "f80001l1-0008-4008-b015-f00000000008", "source_id": "f80001a1-0008-4008-a008-f00000000008", "sink_id": "f80001b1-0008-4008-c008-f00000000008", "source_name": "result", "sink_name": "prompt", "is_static": true }
+      ],
+      "output_links": [
+        { "id": "f80001l2-0008-4008-b016-f00000000008", "source_id": "f80001b1-0008-4008-c008-f00000000008", "sink_id": "f80001c1-0008-4008-d008-f00000000008", "source_name": "finished", "sink_name": "value", "is_static": false }
+      ]
+    },
+    {
+      "id": "f80001c1-0008-4008-d008-f00000000008",
+      "block_id": "363ae599-353e-4804-937e-b2ee3cef3da4",
+      "input_default": { "name": "Output", "secret": false, "advanced": false, "escape_html": false },
+      "metadata": { "position": { "x": 700, "y": 100 } },
+      "input_links": [
+        { "id": "f80001l2-0008-4008-b016-f00000000008", "source_id": "f80001b1-0008-4008-c008-f00000000008", "sink_id": "f80001c1-0008-4008-d008-f00000000008", "source_name": "finished", "sink_name": "value", "is_static": false }
+      ],
+      "output_links": []
+    }
+  ],
+  "links": [
+    { "id": "f80001l1-0008-4008-b015-f00000000008", "source_id": "f80001a1-0008-4008-a008-f00000000008", "sink_id": "f80001b1-0008-4008-c008-f00000000008", "source_name": "result", "sink_name": "prompt", "is_static": true },
+    { "id": "f80001l2-0008-4008-b016-f00000000008", "source_id": "f80001b1-0008-4008-c008-f00000000008", "sink_id": "f80001c1-0008-4008-d008-f00000000008", "source_name": "finished", "sink_name": "value", "is_static": false }
+  ],
+  "sub_graphs": [],
+  "input_schema": { "type": "object", "properties": { "Input": { "advanced": false, "secret": false, "title": "Input" } }, "required": ["Input"] },
+  "output_schema": { "type": "object", "properties": { "Output": { "advanced": false, "secret": false, "title": "Output" } }, "required": ["Output"] },
+  "has_external_trigger": false,
+  "has_human_in_the_loop": false,
+  "has_sensitive_action": false,
+  "trigger_setup_info": null,
+  "credentials_input_schema": { "type": "object", "properties": {}, "required": [] }
+}

@@ -1,0 +1,6 @@
+D:\cn gpt\AutoGPT-master\autogpt_platform\backend\backend\copilot\config.py:49: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.12/migration/
+  class ChatConfig(BaseSettings):
+Forkserver start method is not available. Using spawn instead.
+2026-06-02 11:37:16,779 [33mWARNING[0m  [33mProvider LINEAR implements OAuth but the required env vars LINEAR_CLIENT_ID and LINEAR_CLIENT_SECRET are not both set[0m
+C:\Users\86186\AppData\Local\pypoetry\Cache\virtualenvs\autogpt-platform-backend-g0Tj-r_P-py3.13\Lib\site-packages\graphiti_core\driver\search_interface\search_interface.py:22: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.12/migration/
+  class SearchInterface(BaseModel):

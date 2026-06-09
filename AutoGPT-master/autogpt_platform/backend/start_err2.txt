@@ -1,0 +1,260 @@
+D:\cn gpt\AutoGPT-master\autogpt_platform\backend\backend\copilot\config.py:49: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.12/migration/
+  class ChatConfig(BaseSettings):
+Forkserver start method is not available. Using spawn instead.
+2026-06-02 11:45:54,046 [33mWARNING[0m  [33mProvider LINEAR implements OAuth but the required env vars LINEAR_CLIENT_ID and LINEAR_CLIENT_SECRET are not both set[0m
+C:\Users\86186\AppData\Local\pypoetry\Cache\virtualenvs\autogpt-platform-backend-g0Tj-r_P-py3.13\Lib\site-packages\graphiti_core\driver\search_interface\search_interface.py:22: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.12/migration/
+  class SearchInterface(BaseModel):
+2026-06-02 11:45:55,352 [31mERROR[0m  [31mTraceback (most recent call last):
+  File "C:\Users\86186\AppData\Local\pypoetry\Cache\virtualenvs\autogpt-platform-backend-g0Tj-r_P-py3.13\Lib\site-packages\starlette\routing.py", line 694, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+               ~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\python\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86186\AppData\Local\pypoetry\Cache\virtualenvs\autogpt-platform-backend-g0Tj-r_P-py3.13\Lib\site-packages\fastapi\routing.py", line 203, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "D:\python\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86186\AppData\Local\pypoetry\Cache\virtualenvs\autogpt-platform-backend-g0Tj-r_P-py3.13\Lib\site-packages\fastapi\routing.py", line 203, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "D:\python\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86186\AppData\Local\pypoetry\Cache\virtualenvs\autogpt-platform-backend-g0Tj-r_P-py3.13\Lib\site-packages\fastapi\routing.py", line 203, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "D:\python\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86186\AppData\Local\pypoetry\Cache\virtualenvs\autogpt-platform-backend-g0Tj-r_P-py3.13\Lib\site-packages\fastapi\routing.py", line 203, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "D:\python\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86186\AppData\Local\pypoetry\Cache\virtualenvs\autogpt-platform-backend-g0Tj-r_P-py3.13\Lib\site-packages\fastapi\routing.py", line 203, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "D:\python\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86186\AppData\Local\pypoetry\Cache\virtualenvs\autogpt-platform-backend-g0Tj-r_P-py3.13\Lib\site-packages\fastapi\routing.py", line 203, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "D:\python\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86186\AppData\Local\pypoetry\Cache\virtualenvs\autogpt-platform-backend-g0Tj-r_P-py3.13\Lib\site-packages\fastapi\routing.py", line 203, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "D:\python\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86186\AppData\Local\pypoetry\Cache\virtualenvs\autogpt-platform-backend-g0Tj-r_P-py3.13\Lib\site-packages\fastapi\routing.py", line 203, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "D:\python\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86186\AppData\Local\pypoetry\Cache\virtualenvs\autogpt-platform-backend-g0Tj-r_P-py3.13\Lib\site-packages\fastapi\routing.py", line 203, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "D:\python\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86186\AppData\Local\pypoetry\Cache\virtualenvs\autogpt-platform-backend-g0Tj-r_P-py3.13\Lib\site-packages\fastapi\routing.py", line 203, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "D:\python\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86186\AppData\Local\pypoetry\Cache\virtualenvs\autogpt-platform-backend-g0Tj-r_P-py3.13\Lib\site-packages\fastapi\routing.py", line 203, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "D:\python\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86186\AppData\Local\pypoetry\Cache\virtualenvs\autogpt-platform-backend-g0Tj-r_P-py3.13\Lib\site-packages\fastapi\routing.py", line 203, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "D:\python\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86186\AppData\Local\pypoetry\Cache\virtualenvs\autogpt-platform-backend-g0Tj-r_P-py3.13\Lib\site-packages\fastapi\routing.py", line 203, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "D:\python\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86186\AppData\Local\pypoetry\Cache\virtualenvs\autogpt-platform-backend-g0Tj-r_P-py3.13\Lib\site-packages\fastapi\routing.py", line 203, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "D:\python\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86186\AppData\Local\pypoetry\Cache\virtualenvs\autogpt-platform-backend-g0Tj-r_P-py3.13\Lib\site-packages\fastapi\routing.py", line 203, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "D:\python\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86186\AppData\Local\pypoetry\Cache\virtualenvs\autogpt-platform-backend-g0Tj-r_P-py3.13\Lib\site-packages\fastapi\routing.py", line 203, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "D:\python\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86186\AppData\Local\pypoetry\Cache\virtualenvs\autogpt-platform-backend-g0Tj-r_P-py3.13\Lib\site-packages\fastapi\routing.py", line 203, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "D:\python\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86186\AppData\Local\pypoetry\Cache\virtualenvs\autogpt-platform-backend-g0Tj-r_P-py3.13\Lib\site-packages\fastapi\routing.py", line 203, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "D:\python\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86186\AppData\Local\pypoetry\Cache\virtualenvs\autogpt-platform-backend-g0Tj-r_P-py3.13\Lib\site-packages\fastapi\routing.py", line 203, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "D:\python\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86186\AppData\Local\pypoetry\Cache\virtualenvs\autogpt-platform-backend-g0Tj-r_P-py3.13\Lib\site-packages\fastapi\routing.py", line 203, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "D:\python\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86186\AppData\Local\pypoetry\Cache\virtualenvs\autogpt-platform-backend-g0Tj-r_P-py3.13\Lib\site-packages\fastapi\routing.py", line 203, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "D:\python\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86186\AppData\Local\pypoetry\Cache\virtualenvs\autogpt-platform-backend-g0Tj-r_P-py3.13\Lib\site-packages\fastapi\routing.py", line 203, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "D:\python\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86186\AppData\Local\pypoetry\Cache\virtualenvs\autogpt-platform-backend-g0Tj-r_P-py3.13\Lib\site-packages\fastapi\routing.py", line 203, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "D:\python\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\86186\AppData\Local\pypoetry\Cache\virtualenvs\autogpt-platform-backend-g0Tj-r_P-py3.13\Lib\site-packages\fastapi\routing.py", line 203, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "D:\python\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\cn gpt\AutoGPT-master\autogpt_platform\backend\backend\api\rest_api.py", line 100, in lifespan_context
+    verify_auth_settings()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\cn gpt\AutoGPT-master\autogpt_platform\autogpt_libs\autogpt_libs\auth\config.py", line 87, in verify_settings
+    _settings = Settings()  # calls validation indirectly
+  File "D:\cn gpt\AutoGPT-master\autogpt_platform\autogpt_libs\autogpt_libs\auth\config.py", line 30, in __init__
+    self.validate()
+    ~~~~~~~~~~~~~^^
+  File "D:\cn gpt\AutoGPT-master\autogpt_platform\autogpt_libs\autogpt_libs\auth\config.py", line 34, in validate
+    raise AuthConfigError(
+    ...<2 lines>...
+    )
+autogpt_libs.auth.config.AuthConfigError: JWT_VERIFY_KEY must be set. An empty JWT secret would allow anyone to forge valid tokens.
+[0m
+2026-06-02 11:45:55,376 [31mERROR[0m  [31mApplication startup failed. Exiting.[0m
+2026-06-02 11:45:55,383 [33mWARNING[0m  [33m[AgentServer] \U0001f6d1 Terminating because of SystemExit: 3[0m
+--- Logging error ---
+Traceback (most recent call last):
+  File "D:\python\Lib\logging\__init__.py", line 1153, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'gbk' codec can't encode character '\U0001f9f9' in position 53: illegal multibyte sequence
+Call stack:
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\cn gpt\AutoGPT-master\autogpt_platform\backend\backend\rest.py", line 13, in <module>
+    main()
+  File "D:\cn gpt\AutoGPT-master\autogpt_platform\backend\backend\rest.py", line 9, in main
+    run_processes(AgentServer())
+  File "D:\cn gpt\AutoGPT-master\autogpt_platform\backend\backend\app.py", line 25, in run_processes
+    processes[-1].start(background=False, **kwargs)
+  File "D:\cn gpt\AutoGPT-master\autogpt_platform\backend\backend\util\process.py", line 124, in start
+    self.execute_run_command(silent)
+  File "D:\cn gpt\AutoGPT-master\autogpt_platform\backend\backend\util\process.py", line 82, in execute_run_command
+    logger.info(f"[{self.service_name}] \U0001f9f9 Running cleanup")
+  File "D:\python\Lib\logging\__init__.py", line 1519, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "D:\python\Lib\logging\__init__.py", line 1664, in _log
+    self.handle(record)
+  File "D:\python\Lib\logging\__init__.py", line 1680, in handle
+    self.callHandlers(record)
+  File "C:\Users\86186\AppData\Local\pypoetry\Cache\virtualenvs\autogpt-platform-backend-g0Tj-r_P-py3.13\Lib\site-packages\sentry_sdk\integrations\logging.py", line 123, in sentry_patched_callhandlers
+    return old_callhandlers(self, record)
+Message: '[AgentServer] \U0001f9f9 Running cleanup'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "D:\python\Lib\logging\__init__.py", line 1153, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'gbk' codec can't encode character '\u2705' in position 53: illegal multibyte sequence
+Call stack:
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\cn gpt\AutoGPT-master\autogpt_platform\backend\backend\rest.py", line 13, in <module>
+    main()
+  File "D:\cn gpt\AutoGPT-master\autogpt_platform\backend\backend\rest.py", line 9, in main
+    run_processes(AgentServer())
+  File "D:\cn gpt\AutoGPT-master\autogpt_platform\backend\backend\app.py", line 25, in run_processes
+    processes[-1].start(background=False, **kwargs)
+  File "D:\cn gpt\AutoGPT-master\autogpt_platform\backend\backend\util\process.py", line 124, in start
+    self.execute_run_command(silent)
+  File "D:\cn gpt\AutoGPT-master\autogpt_platform\backend\backend\util\process.py", line 84, in execute_run_command
+    logger.info(f"[{self.service_name}] \u2705 Cleanup done")
+  File "D:\python\Lib\logging\__init__.py", line 1519, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "D:\python\Lib\logging\__init__.py", line 1664, in _log
+    self.handle(record)
+  File "D:\python\Lib\logging\__init__.py", line 1680, in handle
+    self.callHandlers(record)
+  File "C:\Users\86186\AppData\Local\pypoetry\Cache\virtualenvs\autogpt-platform-backend-g0Tj-r_P-py3.13\Lib\site-packages\sentry_sdk\integrations\logging.py", line 123, in sentry_patched_callhandlers
+    return old_callhandlers(self, record)
+Message: '[AgentServer] \u2705 Cleanup done'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "D:\python\Lib\logging\__init__.py", line 1153, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'gbk' codec can't encode character '\U0001f6d1' in position 53: illegal multibyte sequence
+Call stack:
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\cn gpt\AutoGPT-master\autogpt_platform\backend\backend\rest.py", line 13, in <module>
+    main()
+  File "D:\cn gpt\AutoGPT-master\autogpt_platform\backend\backend\rest.py", line 9, in main
+    run_processes(AgentServer())
+  File "D:\cn gpt\AutoGPT-master\autogpt_platform\backend\backend\app.py", line 25, in run_processes
+    processes[-1].start(background=False, **kwargs)
+  File "D:\cn gpt\AutoGPT-master\autogpt_platform\backend\backend\util\process.py", line 124, in start
+    self.execute_run_command(silent)
+  File "D:\cn gpt\AutoGPT-master\autogpt_platform\backend\backend\util\process.py", line 85, in execute_run_command
+    logger.info(f"[{self.service_name}] \U0001f6d1 Terminated")
+  File "D:\python\Lib\logging\__init__.py", line 1519, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "D:\python\Lib\logging\__init__.py", line 1664, in _log
+    self.handle(record)
+  File "D:\python\Lib\logging\__init__.py", line 1680, in handle
+    self.callHandlers(record)
+  File "C:\Users\86186\AppData\Local\pypoetry\Cache\virtualenvs\autogpt-platform-backend-g0Tj-r_P-py3.13\Lib\site-packages\sentry_sdk\integrations\logging.py", line 123, in sentry_patched_callhandlers
+    return old_callhandlers(self, record)
+Message: '[AgentServer] \U0001f6d1 Terminated'
+Arguments: ()
